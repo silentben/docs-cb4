@@ -9,7 +9,7 @@
       <p>Curl example syntax:</p>
       <codeblock>// Initialize Node
 curl -u Administrator:password -v -X POST http://[localhost]:8091/nodes/self/controller/settings
-  -d data_path=[location]
+  -d path=[location]
   -d index_path=[location]
 
 // Rename Node
@@ -70,7 +70,7 @@ POST /pools/default/buckets    </codeblock>
       <p>Curl examples:</p>
       <codeblock>// Initialize Node
 curl  -u Administrator:password -v -X POST http://192.168.42.101:8091/nodes/self/controller/settings \
-  -d &apos;data_path=%2Fopt%2Fcouchbase%2Fvar%2Flib%2Fcouchbase%2Fdata&amp; \
+  -d &apos;path=%2Fopt%2Fcouchbase%2Fvar%2Flib%2Fcouchbase%2Fdata&amp; \
   index_path=%2Fopt%2Fcouchbase%2Fvar%2Flib%2Fcouchbase%2Fdata&apos;
         
 // Rename Node
